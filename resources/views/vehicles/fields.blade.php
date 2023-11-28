@@ -1,3 +1,4 @@
+
 <form action="{{ route('vehicles.store') }}" class="forms-sample" method="POST">
     @csrf
     <div class="row">
@@ -9,6 +10,7 @@
                     id="exampleInputEmail3" readonly placeholder="Registration Number Auto">
             </div>
         </div>
+
         <div class="col-md-4">
             <div class="form-group">
                 <label for="exampleInputName1">Category</label>
@@ -52,7 +54,7 @@
         <div class="col-md-6">
             <div class="form-group">
                 <label for="exampleInputEmail3">Vehicle Plat Number</label>
-                <input type="text" name="plat_number" value="{{ isset($vehicle) ? $vehicle->plat_number : '' }}"
+                <input type="text" name="plat_number" value="{{ isset($texto) ? $texto : '' }}"
                     class="form-control" id="exampleInputEmail3" placeholder="Vehicle Plat Number">
             </div>
         </div>

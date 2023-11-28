@@ -44,6 +44,7 @@
                 <div class="nav-item has-sub {{ request()->routeIs('vehicles*')  ? 'open' : ''}}">
                     <a href="#"><i class="ik ik-truck"></i><span>Register Vehicles</span> </a>
                     <div class="submenu-content">
+                        
                         <a href="{{ route('vehicles.create') }}" class="menu-item  {{ request()->routeIs('vehicles.create') ? 'active' : '' }}">Create</a>
                         <a href="{{ route('vehicles.index') }}" class="menu-item  {{ request()->routeIs('vehicles.index') ? 'active' : '' }}">List</a>
                     </div>
